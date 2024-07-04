@@ -2,6 +2,7 @@ package booking.fixture;
 
 public class BookingDates {
 
+
         private String checkin;
         private String checkout;
 
@@ -10,16 +11,16 @@ public class BookingDates {
         this.checkout = checkout;
     }
 
-    public String getCheckIn() {
+    public String getCheckin() {
         return checkin;
     }
 
-    public String getCheckOut() {
-        return checkout;
+    public void setCheckin(String checkin) {
+        this.checkin = checkin;
     }
 
-    public void setCheckIn(String checkin) {
-        this.checkin = checkin;
+    public String getCheckout() {
+        return checkout;
     }
 
     public void setCheckout(String checkout) {
@@ -27,10 +28,15 @@ public class BookingDates {
     }
 
     @Override
-    public String toString(){
-        return "BookingDates{" +
-                "checkin=" + checkin +
-                ", checkout=" + checkout +
+    public String toString() {
+        return "Bookingdates{" +
+                "checkin=" + checkin + '\'' +
+                ", .checkout=" + checkout  +
                 '}';
+
     }
+
+
 }
+
+
